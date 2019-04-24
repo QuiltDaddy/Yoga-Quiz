@@ -104,18 +104,22 @@ function displayFinalScreen() {
   $('.pose').prop("alt", "Man and Woman Standing");
   // Returns to original picture and alt text
 
+  let quotes = '\u0022';
+  let apostrophe = '\u0027';
+  let hyphen = '\u002D';
+
   const resultsText = [
-    `"There are two mistakes one can make along the road to truth: not going all the way, and not starting." – Buddha`,
-    `“Quiet the mind,and the soul will speak.” – Ma Jaya Sati Bhagavati`,
-    '“Change is not something that we should fear. Rather, it is something that we should welcome. For without change, nothing in this world would ever grow or blossom, and no one in this world would ever move forward to become the person they’re meant to be.” – B.K.S Iyengar',
-    `“Yoga is the journey of the self, through the self, to the self.” – The Bhagavad Gita`,
-    `“Yoga is not about touching your toes. It is what you learn on the way down.” – Jigar Gor`,
-    `“The pose begins when you want to get out of it.” – Baron Baptiste`,
-    `“Yoga teaches us to cure what need not be endured and endure what cannot be cured.” – B.K.S Iyengar`,
-    `“Yoga does not remove us from the reality or responsibilities of everyday life but rather places our feet firmly and resolutely in the practical ground of experience. We don’t transcend our lives; we return to the life we left behind in the hopes of something better.” – Donna Farhi`,
-    `“Inner peace begins the moment you choose not to allow another person or event to control your emotions." – Unknown`,
-    `“Yoga does not just change the way we see things, it transforms the person who sees.” – B.K.S Iyengar`,
-    `"Yoga is the stilling of the fluctuations of the mind" – Patanjali`
+    `${quotes}There are two mistakes one can make along the road to truth: not going all the way, and not starting.${quotes} ${hyphen} Buddha`,
+    `${quotes}Quiet the mind, and the soul will speak.${quotes} ${hyphen} Ma Jaya Sati Bhagavati`,
+    `${quotes}Change is not something that we should fear. Rather, it is something that we should welcome. For without change, nothing in this world would ever grow or blossom, and no one in this world would ever move forward to become the person they${apostrophe}re meant to be.${quotes} ${hyphen} B.K.S Iyengar`,
+    `${quotes}Yoga is the journey of the self, through the self, to the self.${quotes} ${hyphen} The Bhagavad Gita`,
+    `${quotes}Yoga is not about touching your toes. It is what you learn on the way down.${quotes} ${hyphen} Jigar Gor`,
+    `${quotes}The pose begins when you want to get out of it.${quotes} ${hyphen} Baron Baptiste`,
+    `${quotes}Yoga teaches us to cure what need not be endured and endure what cannot be cured.${quotes} ${hyphen} B.K.S Iyengar`,
+    `${quotes}Yoga does not remove us from the reality or responsibilities of everyday life but rather places our feet firmly and resolutely in the practical ground of experience. We don${apostrophe}t transcend our lives; we return to the life we left behind in the hopes of something better.${quotes} ${hyphen} Donna Farhi`,
+    `${quotes}Inner peace begins the moment you choose not to allow another person or event to control your emotions.${quotes} ${hyphen} Unknown`,
+    `${quotes}Yoga does not just change the way we see things, it transforms the person who sees.${quotes} ${hyphen} B.K.S Iyengar`,
+    `${quotes}Yoga is the stilling of the fluctuations of the mind.${quotes} ${hyphen} Patanjali`
   ]; // Quotes by score
   
   $('.the-answer').html(`
